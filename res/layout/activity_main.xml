@@ -13,12 +13,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
-    
+<!--     
     <com.tarlic.hyperiongame.CustomDrawableView
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       />
-    
+ -->    
         <GridView 
             android:layout_below="@id/lifes"
 		    android:id="@+id/gridview"
@@ -32,8 +32,7 @@
 		    android:stretchMode="columnWidth"
 		    android:gravity="center"
 			/>
-    
-    
+ 
     <!-- Notice that the android:id value does not include the plus sign
     in the ID reference, because the ID already exists, as defined in
     the ids.xml example above. (When you specify an ID to an XML resource

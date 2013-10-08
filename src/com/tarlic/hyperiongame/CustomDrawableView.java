@@ -1,8 +1,13 @@
 package com.tarlic.hyperiongame;
 
+import java.util.Iterator;
+import java.util.Vector;
+
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.Rect;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.OvalShape;
 import android.util.AttributeSet;
@@ -12,49 +17,61 @@ import android.view.View;
 
 public class CustomDrawableView extends View {
 	private ShapeDrawable mDrawable;
+	
+	private Vector<Figure> mFigures;
+	
+	private int i, x, y;
 
-	public CustomDrawableView(Context context, AttributeSet attributeSet) {
+	public CustomDrawableView(Context context, AttributeSet attributeSet, Vector<Figure> figures) {
 		super(context, attributeSet);
 
-		int x = 100;
-		int y = 100;
-		int width = 50;
-		int height = 50;
-
-		mDrawable = new ShapeDrawable(new OvalShape());
-		mDrawable.getPaint().setColor(0xff74AC23);
-		mDrawable.setBounds(x, y, x + width, y + height);
-		
-		this.setOnTouchListener(new OnTouchListener()
-		{
-
-		@Override
-		public boolean onTouch(View arg0, MotionEvent motionEvent) {
-			// TODO Auto-generated method stub
+		mFigures = figures;
 			
+	}
+	
+	@Override
+	public boolean onTouchEvent(MotionEvent event) {
+		switch (event.getAction()) {
+		case MotionEvent.ACTION_DOWN:
 			
-			if(motionEvent.getAction() == MotionEvent.ACTION_DOWN){
-
-				Log.i("mytag", "ACTION_UP");
+			for (Figure figure : mFigures)
+			{
+				Rect rect = figure.getDrawable().getBounds();
 				
-				Resources r = getContext().getResources();
-				
-				r.getLayout(R.layout.activity_main);
-				
-				
-				
-	            // Do what you want
-	            return true;
-	        }
-	        return false;
+				if (rect.contains((int)event.getX(), (int)event.getY()))
+				{
+					Log.i("mytag", String.valueOf(figure.getID()));
+					
+					isExist();
+				}				
+			}
+			
+			return true;
+		case MotionEvent.ACTION_UP:
+			
+			return true;
+		default:
+			return false;
 		}
+	}
 		
-		});
+	private boolean isExist() {
 		
+		
+		return false;		
 	}
 
+	@Override
 	protected void onDraw(Canvas canvas) {
-		mDrawable.draw(canvas);
+		super.onDraw(canvas);
+		
+		for (Figure figure : mFigures)
+		{
+			figure.getDrawable().draw(canvas);
+		}
+		
+		//mDrawable.draw(canvas);
+		
 	}
 	
 	

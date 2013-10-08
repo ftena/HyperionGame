@@ -1,5 +1,7 @@
 package com.tarlic.hyperiongame;
 
+import java.util.Vector;
+
 import com.tarlic.hyperiongame.R;
 
 import android.os.Bundle;
@@ -25,10 +27,9 @@ public class MainActivity extends Activity {
 	
 	RelativeLayout mRelativeLayout;
 	
-	private ShapeDrawable mDrawable;
+	private CustomDrawableView mCustomDrawableView;
 	
-	Figure mFigure1;
-	Figure mFigure2;
+	private Vector<Figure> mFigures = new Vector<Figure>();
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +38,7 @@ public class MainActivity extends Activity {
 		
 		//mFigure1 = new Figure(this);
 		
-		GridView gridview = (GridView) findViewById(R.id.gridview);
+		/*GridView gridview = (GridView) findViewById(R.id.gridview);
 	    gridview.setAdapter(new ImageAdapter(this));
 	    
 	    gridview.setOnItemClickListener(new OnItemClickListener() {
@@ -49,20 +50,27 @@ public class MainActivity extends Activity {
 	            Toast.makeText(MainActivity.this, "" + drawable.getColor(), Toast.LENGTH_SHORT).show();
 
 	        }
-	    });
+	    });*/
+		
+		mRelativeLayout = (RelativeLayout) findViewById(R.id.custom_relative_layout);
+		
+		Figure mFigure1 = new Figure(this, 0, 50, 50, 50, 50);
+		Figure mFigure2 = new Figure(this, 1, 200, 200, 50, 50);
+		Figure mFigure3 = new Figure(this, 2, 100, 100, 50, 50);
+		Figure mFigure4 = new Figure(this, 3, 250, 250, 50, 50);
+		
+		mFigures.add(mFigure1);		
+		mFigures.add(mFigure2);
+		mFigures.add(mFigure3);
+		mFigures.add(mFigure4);
+		
+		mCustomDrawableView = new CustomDrawableView (this, null, mFigures);
+		
+		mRelativeLayout.addView(mCustomDrawableView);
 		
 		
 	}
 	
-		/*mRelativeLayout = (RelativeLayout) findViewById(R.id.custom_relative_layout);
-		
-		mLayoutParams = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
-		
-		mLayoutParams.width = 50;
-		mLayoutParams.height = 50;
-		
-		mRelativeLayout.addView(mFigure1, mLayoutParams);*/
-		
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
