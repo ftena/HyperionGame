@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/lifes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+    
+    <com.tarlic.hyperiongame.CustomDrawableView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      />
+    
+        <GridView 
+            android:layout_below="@id/lifes"
+		    android:id="@+id/gridview"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="fill_parent"
+		    android:columnWidth="50dp"
+		    android:numColumns="auto_fit"
+		    android:paddingTop="20dp"
+		    android:verticalSpacing="10dp"
+		    android:horizontalSpacing="10dp"
+		    android:stretchMode="columnWidth"
+		    android:gravity="center"
+			/>
+    
+    
+    <!-- Notice that the android:id value does not include the plus sign
+    in the ID reference, because the ID already exists, as defined in
+    the ids.xml example above. (When you specify an ID to an XML resource
+    using the plus sign—in the format android:id="@+id/name"—it means
+    that the "name" ID does not exist and should be created.) -->    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@id/custom_relative_layout" >
+    </RelativeLayout>
+    
+    
+
+</RelativeLayout>
