@@ -1,7 +1,6 @@
 package com.tarlic.hyperiongame;
 
 import android.content.Context;
-import android.database.DataSetObserver;
 import android.graphics.Color;
 import android.view.View;
 import android.view.ViewGroup;

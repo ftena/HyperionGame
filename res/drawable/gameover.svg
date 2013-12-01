@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="gameover.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.38254353"
+     inkscape:cx="332.14286"
+     inkscape:cy="940.68846"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="706"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#800000;fill-opacity:1;stroke:none;font-family:Sans"
+       d="m -112.80686,84.244188 -41.93183,30.523912 -10.79129,55.498 29.7531,60.58535 72.918233,-9.24966 56.5771401,10.17462 10.79128,-37.30701 47.9441099,1.07914 4.77899,34.99459 59.660377,-9.55798 -1.38746,-3.23741 47.63578,9.09552 33.45296,-70.91412 27.74902,36.84452 36.22788,-32.37386 12.17872,34.84042 10.02051,35.91955 52.72307,-4.31651 -40.54438,-141.982419 -36.84452,0.770803 -24.51161,39.773576 -13.72035,-39.465259 -41.77767,0 -66.5976,123.483069 -57.039627,-124.253873 -39.46527,3.854029 -52.72309,88.796834 0,-37.46118 -58.272917,-0.77078 -3.545693,39.61939 27.90316,-2.62074 -0.77082,6.62896 -36.227853,4.31651 -12.64122,-26.66988 12.02457,-28.67399 20.040943,-6.01229 13.72034,7.39975 33.7613,-18.80767 -19.73264,-26.9782 -51.335643,-3.545712 z m 459.40021,0 -10.63712,52.106462 10.63712,94.34666 108.68361,0 -16.80358,-39.31111 -45.63168,-0.30848 -3.23738,-10.63712 37.46116,-3.39155 2.00406,-31.44887 -42.08598,-3.08323 0.61664,-10.02048 47.48163,-7.39973 8.17056,-40.852712 -96.65904,0 z m 350.71661,0 33.45299,141.365792 68.60166,5.08733 55.65223,-146.453122 -56.57716,2.774909 -21.89091,78.313853 -7.70803,9.86631 -20.34928,-88.180163 -51.1815,-2.774909 z m 177.28528,0 -10.7912,52.106462 10.7912,94.34666 108.6836,0 -16.8035,-39.31111 -45.6317,-0.30848 -3.2374,-10.63712 37.4612,-3.39155 2.0041,-31.44887 -42.086,-3.08323 0.6166,-10.02048 47.4816,-7.39973 8.1706,-40.852712 -96.6591,0 z m -277.79834,0.616653 -46.40253,29.444779 -9.24966,61.81863 62.12694,54.7272 78.00557,-20.1951 12.17869,-70.45165 -43.01095,-53.49392 -53.64806,-1.849939 z m 461.8667,0.616633 -81.85946,6.320621 11.4079,139.669995 45.47746,0 -6.783,-38.07783 44.8608,38.38615 42.7027,-18.6535 -36.3821,-32.06551 20.5035,-22.97002 -3.3916,-45.94002 -36.5362,-26.669886 z m -31.7571,40.852716 22.97,12.17873 -12.0246,17.42022 -12.1787,-1.54163 1.2333,-28.05732 z m -418.39338,10.02046 24.6658,5.54979 0.92496,21.89091 -18.34519,6.78307 -17.42019,-11.71622 10.17462,-22.50755 z m -583.499937,0.46249 15.26195,0.61664 6.93726,20.34928 -30.21558,-0.92499 8.01637,-20.04093 z"
+       id="flowRoot2985"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Isabel\workspace\android\HyperionGame\res\drawable\game_over.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+</svg>

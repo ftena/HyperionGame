@@ -6,44 +6,45 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity" >
+    tools:context=".GameActivity" >
+    
+    <RelativeLayout
+	    android:id="@+id/relativeHeader"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+    
+		<TextView
+		    android:id="@+id/level"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:text="@string/level" />
+	    
+	    <ProgressBar
+	        android:id="@+id/time"
+	        style="@android:style/Widget.ProgressBar.Horizontal"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        android:layout_toRightOf="@id/level" />
 
-    <TextView
-        android:id="@+id/lifes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
-<!--     
-    <com.tarlic.hyperiongame.CustomDrawableView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      />
- -->    
-        <GridView 
-            android:layout_below="@id/lifes"
-		    android:id="@+id/gridview"
-		    android:layout_width="fill_parent" 
-		    android:layout_height="fill_parent"
-		    android:columnWidth="50dp"
-		    android:numColumns="auto_fit"
-		    android:paddingTop="20dp"
-		    android:verticalSpacing="10dp"
-		    android:horizontalSpacing="10dp"
-		    android:stretchMode="columnWidth"
-		    android:gravity="center"
-			/>
- 
+     </RelativeLayout>
+
     <!-- Notice that the android:id value does not include the plus sign
     in the ID reference, because the ID already exists, as defined in
     the ids.xml example above. (When you specify an ID to an XML resource
     using the plus sign—in the format android:id="@+id/name"—it means
     that the "name" ID does not exist and should be created.) -->    
+
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@id/custom_relative_layout" >
+        android:id="@id/custom_relative_layout"
+        android:layout_below="@id/relativeHeader"
+        android:paddingTop="7dp"       
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
     </RelativeLayout>
-    
-    
 
 </RelativeLayout>

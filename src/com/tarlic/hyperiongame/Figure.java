@@ -1,65 +1,48 @@
 package com.tarlic.hyperiongame;
 
 import java.util.Random;
+import java.util.Vector;
 
-import android.content.Context;
+import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
+import android.graphics.drawable.GradientDrawable.Orientation;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.OvalShape;
-import android.widget.ImageView;
 
-public class Figure {
-
-	private ShapeDrawable mDrawable;
-
-	private int mX, mY, mWidth, mHeight;
+public class Figure extends ShapeDrawable {
 	
 	private int mID;
 	
 	private int mColor;
 	
-	private String[] mColors = {
-    		"#000000",
-    		"#FF0000",
-    		"#00FF00",
-    		"#0000FF",
-    		"#FFFF00",
-    		"#00FFFF",
-    		"#FF00FF",
-    		"#C0C0C0",
-    		"#808080",
-    		"#800000",
-    		"#808000",
-    		"#008000",
-    		"#800080",
-    		"#008080",
-    		"#000080"
-    };
+	private GradientDrawable gradient;
 	
-	public Figure(Context context, int id, int x, int y, int width, int height) {
+	public Figure(int id, int x, int y, int width, int height, Integer color) {
 		setID(id);
-		mX = x;
-		mY = y;
-		mWidth = width;
-		mHeight = height;
+		
+		mColor = color;
+				
+		this.setShape(new OvalShape());
+		this.getPaint().setColor(mColor);
+		this.setBounds(x, y, x + width, y + height);	
+		
+		gradient = new GradientDrawable(Orientation.BOTTOM_TOP,
+				new int[]{Color.TRANSPARENT, Color.TRANSPARENT});
+		gradient.setStroke(5, Color.BLACK);
+		
+		gradient.setShape(GradientDrawable.OVAL);
+		gradient.setBounds(x, y, x + width, y + height);
+	}
 
+	public void changeColor(Vector<Integer> colors) {
 		Random randomColor = new Random();
 		
-		mColor = Color.parseColor(mColors[randomColor.nextInt(mColors.length)]);
+		mColor = colors.get(randomColor.nextInt(colors.size()));
 		
-		mDrawable = new ShapeDrawable(new OvalShape());
-		mDrawable.getPaint().setColor(mColor);
-		mDrawable.setBounds(x, y, x + width, y + height);
+		this.getPaint().setColor(mColor);
 	}
-
-	public ShapeDrawable getDrawable() {
-		return mDrawable;
-	}
-
-	public void setDrawable(ShapeDrawable mDrawable) {
-		this.mDrawable = mDrawable;
-	}
-
+	
 	public int getID() {
 		return mID;
 	}
@@ -67,5 +50,30 @@ public class Figure {
 	public void setID(int mID) {
 		this.mID = mID;
 	}
+	
+	public boolean sameColor(int mColor) {
+		if (this.mColor == mColor)
+			return true;
+		else
+			return false;
+	}
+
+	public int getColor() {
+		return mColor;
+	}
+
+	public void setColor(int mColor) {
+		this.mColor = mColor;
+	}
+
+
+	@Override
+	  public void draw(Canvas canvas) {
+		super.draw(canvas);
+
+		// draw the gradient (black oval)
+		gradient.draw(canvas);
+		
+	   }
 	
 }

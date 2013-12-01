@@ -1,82 +1,62 @@
 package com.tarlic.hyperiongame;
 
-import java.util.Vector;
-
-import com.tarlic.hyperiongame.R;
-
-import android.os.Bundle;
 import android.app.Activity;
-import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.ShapeDrawable;
-import android.graphics.drawable.shapes.OvalShape;
-import android.util.Log;
-import android.view.Menu;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.Button;
-import android.widget.GridView;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.Toast;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 public class MainActivity extends Activity {
+
+	public static final String LEVEL_STRING = "com.tarlic.hyperiongame.LEVEL_STRING";
+	public static final String LEVEL_VALUE = "com.tarlic.hyperiongame.LEVEL_VALUE";
 	
-	RelativeLayout.LayoutParams mLayoutParams;
-	
-	RelativeLayout mRelativeLayout;
-	
-	private CustomDrawableView mCustomDrawableView;
-	
-	private Vector<Figure> mFigures = new Vector<Figure>();
-	
+	private Spinner mSpinner;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
-		
-		//mFigure1 = new Figure(this);
-		
-		/*GridView gridview = (GridView) findViewById(R.id.gridview);
-	    gridview.setAdapter(new ImageAdapter(this));
-	    
-	    gridview.setOnItemClickListener(new OnItemClickListener() {
-	        public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-	            //Toast.makeText(MainActivity.this, "" + position, Toast.LENGTH_SHORT).show();
-	            
-	            ColorDrawable drawable = (ColorDrawable) v.getBackground();
-	            
-	            Toast.makeText(MainActivity.this, "" + drawable.getColor(), Toast.LENGTH_SHORT).show();
 
-	        }
-	    });*/
-		
-		mRelativeLayout = (RelativeLayout) findViewById(R.id.custom_relative_layout);
-		
-		Figure mFigure1 = new Figure(this, 0, 50, 50, 50, 50);
-		Figure mFigure2 = new Figure(this, 1, 200, 200, 50, 50);
-		Figure mFigure3 = new Figure(this, 2, 100, 100, 50, 50);
-		Figure mFigure4 = new Figure(this, 3, 250, 250, 50, 50);
-		
-		mFigures.add(mFigure1);		
-		mFigures.add(mFigure2);
-		mFigures.add(mFigure3);
-		mFigures.add(mFigure4);
-		
-		mCustomDrawableView = new CustomDrawableView (this, null, mFigures);
-		
-		mRelativeLayout.addView(mCustomDrawableView);
-		
-		
+		setContentView(R.layout.activity_title);
+
+		/*
+		 * Set spinner values and listener
+		 */
+
+		mSpinner = (Spinner) findViewById(R.id.title_spinner);
+
+		// Create an ArrayAdapter using the string array and a default spinner layout
+		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+				R.array.levels_array, android.R.layout.simple_spinner_item);
+		// Specify the layout to use when the list of choices appears
+		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		// Apply the adapter to the spinner
+		mSpinner.setAdapter(adapter);
+
+		mSpinner.setOnItemSelectedListener(new SpinnerListener());
 	}
-	
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
+	public void startGame(View view) {
+		Intent intent = new Intent(this, GameActivity.class);
+		
+		// Get the selected level in the spinner
+		Object selectedLevel = mSpinner.getSelectedItem();
+		
+		// Get the level as string
+		String levelString = selectedLevel.toString();
+		
+		/*
+		 *  Get the level as long (adding 1 because the first
+		 *  element in the spinner has the index 0)
+		 */
+		
+		int levelValue = (int) (mSpinner.getSelectedItemId() + 1);
+		
+	    intent.putExtra(LEVEL_STRING, levelString);
+	    intent.putExtra(LEVEL_VALUE, levelValue);
+	    
+	    startActivityForResult (intent, 0);
 	}
 
 }
