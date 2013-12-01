@@ -4,7 +4,6 @@ import java.util.Random;
 import java.util.Vector;
 
 import android.graphics.Color;
-import android.util.Log;
 
 public class ColorGenerator {
 
