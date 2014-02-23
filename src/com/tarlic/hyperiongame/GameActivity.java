@@ -45,7 +45,7 @@ public class GameActivity extends Activity {
 		Intent intent = getIntent();
 		mLevel = intent.getIntExtra(MainActivity.LEVEL_VALUE, 1);
 
-		// Generate an array of colors		
+		// Generate the array of colors		
 		ColorGenerator cg = new ColorGenerator();
 		
 		// There will be more colors than figures!
