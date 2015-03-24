@@ -1,5 +1,5 @@
 # HyperionGame
-Android game.
+A very simple game for Android.
 
 Get the app from Google Play:
 
