@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.0 r9654"
+   sodipodi:docname="feature_graphic"
+   inkscape:export-filename="C:\Users\f.tena\Downloads\HyperionGame-master\HyperionGame-master\assets\feature_graphic.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="386.11167"
+     inkscape:cy="587.87289"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="1138"
+     inkscape:window-x="1592"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#0843aa;stroke-width:9.59807682;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect2988"
+       width="1014.4019"
+       height="490.40192"
+       x="-135.15372"
+       y="280.98013" />
+    <g
+       id="g3817"
+       transform="matrix(2.25,0,0,2.25,-324.95277,-141.38377)"
+       inkscape:export-filename="C:\Users\Isabel\workspace\android\HyperionGame\assets\hi-res-icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         transform="matrix(0.4362625,0,0,0.44971553,300.08306,165.58249)"
+         d="m 184.72222,239.16774 c 0,87.06155 -72.75373,157.63889 -162.499999,157.63889 -89.746271,0 -162.500001,-70.57734 -162.500001,-157.63889 0,-87.06155 72.75373,-157.638886 162.500001,-157.638886 89.746269,0 162.499999,70.577336 162.499999,157.638886 z"
+         sodipodi:ry="157.63889"
+         sodipodi:rx="162.5"
+         sodipodi:cy="239.16774"
+         sodipodi:cx="22.222221"
+         id="path3815"
+         style="fill:#daff6c;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc" />
+      <g
+         transform="matrix(0.34453258,0,0,0.34453258,197.47844,147.99308)"
+         id="g3810">
+        <path
+           style="fill:#3d5372;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 315.60417,209.86218 c -55.22847,0 -100,44.77152 -100,100 0,55.22848 44.77153,100 100,100 55.22847,0 100,-44.77152 100,-100 0,-55.22848 -44.77153,-100 -100,-100 z"
+           id="path2985"
+           inkscape:connector-curvature="0" />
+        <path
+           inkscape:connector-curvature="0"
+           style="fill:#1e902d;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 251.89395,299.86218 c -55.22847,0 -100,44.77152 -100,100 0,55.22848 44.77153,100 100,100 55.22847,0 100,-44.77152 100,-100 0,-55.22848 -44.77153,-100 -100,-100 z"
+           id="path2985-5" />
+        <path
+           inkscape:connector-curvature="0"
+           style="fill:#b10303;fill-opacity:1;stroke:#000000;stroke-width:5.04878044;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 394.19193,298.88657 c -55.76728,0 -100.97561,45.20832 -100.97561,100.97561 0,55.76729 45.20833,100.97561 100.97561,100.97561 55.76728,0 100.97561,-45.20832 100.97561,-100.97561 0,-55.76729 -45.20833,-100.97561 -100.97561,-100.97561 z"
+           id="path2985-5-3" />
+      </g>
+    </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3758"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Super Mario 256;-inkscape-font-specification:Super Mario 256"><flowRegion
+         id="flowRegion3760"><rect
+           id="rect3762"
+           width="158"
+           height="54"
+           x="141"
+           y="222.36218" /></flowRegion><flowPara
+         id="flowPara3764">Hyperion Ggam</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot2997"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#360000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="matrix(2.9166414,0,0,2.9166414,609.12689,-158.51686)"><flowRegion
+         id="flowRegion2999"><rect
+           id="rect3001"
+           width="834"
+           height="138"
+           x="-249"
+           y="264.36218"
+           style="fill:#360000;fill-opacity:1" /></flowRegion><flowPara
+         id="flowPara3003"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#360000;fill-opacity:1;stroke:#ff0000;stroke-opacity:1;font-family:Super Mario Brothers;-inkscape-font-specification:Super Mario Brothers">Hyperion Game</flowPara></flowRoot>  </g>
+</svg>
